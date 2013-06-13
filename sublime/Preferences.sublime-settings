@@ -1,0 +1,12 @@
+{
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/themes/PurpleNurple.tmTheme",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"SVN",
+		"Vintage"
+	],
+	// disable OS X scrollbars
+	"overlay_scroll_bars": "disabled"
+}

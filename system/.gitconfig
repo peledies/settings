@@ -1,0 +1,29 @@
+[user]
+	name = Deac
+	email = deac@sdicg.com
+[color]
+	ui = true
+[merge]
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+[diff]
+	external = /usr/bin/git-diff-cmd.sh
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
