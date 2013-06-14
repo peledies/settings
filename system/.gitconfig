@@ -9,7 +9,7 @@
     ci = commit
     st = status
 [diff]
-	external = /usr/bin/git-diff-cmd.sh
+	external = /usr/share/git-core/git-diff-cmd.sh
 [color]
     branch = auto
     diff = auto
