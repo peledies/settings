@@ -30,28 +30,26 @@ then
 	if [ ! -f "/usr/share/git-core/git-completion.bash" ]
 	then
 		echo "Copying git-completion.bash to /usr/share/git-core/"
-		cp "$system_source""git-completion.bash" "/usr/share/git-core/"
+		sudo cp "$system_source""git-completion.bash" "/usr/share/git-core/"
 	else
 		echo "Keeping existing git-completion.bash"
 	fi
 	if [ ! -f "/usr/share/git-core/git-prompt.sh" ]
 	then
 		echo "Copying git-prompt.sh to /usr/share/git-core/"
-		cp "$system_source""git-prompt.sh" "/usr/share/git-core/"
+		sudo cp "$system_source""git-prompt.sh" "/usr/share/git-core/"
 	else
 		echo "Keeping existing git-prompt.sh"
 	fi
 
 else
 	echo "Creating appropriate file structure for GIT completion"
-	mkdir -p "/usr/share/git-core/"
+	sudo mkdir -p "/usr/share/git-core/"
 
 	echo "Copying git-completion.bash to /usr/share/git-core/"
-	cp "$system_source""git-completion.bash" "/usr/share/git-core/"
+	sudo cp "$system_source""git-completion.bash" "/usr/share/git-core/"
 
 	echo "Copying git-prompt.sh to /usr/share/git-core/"
-	cp "$system_source""git-prompt.sh" "/usr/share/git-core/"
+	sudo cp "$system_source""git-prompt.sh" "/usr/share/git-core/"
 
 fi
-
-source ~/.bash_profile
