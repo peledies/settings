@@ -24,3 +24,5 @@ cp "$system_path.gitconfig" "$system_target"
 
 echo "creating shell script to use the OS X diff tool with GIT"
 cp "/usr/bin/git-diff-cmd.sh" "$system_target"
+
+source ~/.bash_profile
