@@ -22,9 +22,14 @@ cp "$system_source.vimrc" "$system_target"
 echo "overwriting $system_target.gitconfig"
 cp "$system_source.gitconfig" "$system_target"
 
+echo "overwriting $system_target.gitignore_global"
+cp "$system_source.gitignore_global" "$system_target"
+
 echo "creating shell script to use the OS X diff tool with GIT"
 sudo cp "$system_source""git-diff-cmd.sh" "/usr/share/git-core/git-diff-cmd.sh"
 
+echo "creating sublime text 2 alias to allow opening files or folders in sublime from the terminal"
+sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
 if [ -d "/usr/share/git-core/" ]
 then
 	if [ ! -f "/usr/share/git-core/git-completion.bash" ]
