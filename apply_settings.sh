@@ -58,3 +58,4 @@ else
 	sudo cp "$system_source""git-prompt.sh" "/usr/share/git-core/"
 
 fi
+echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect"
