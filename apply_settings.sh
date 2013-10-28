@@ -25,6 +25,9 @@ cp "$system_source.gitconfig" "$system_target"
 echo "overwriting $system_target.gitignore_global"
 cp "$system_source.gitignore_global" "$system_target"
 
+echo "adding git ignore to your global git configuration"
+git config --global core.excludesfile $system_target.gitignore_global
+
 echo "creating shell script to use the OS X diff tool with GIT"
 sudo cp "$system_source""git-diff-cmd.sh" "/usr/share/git-core/git-diff-cmd.sh"
 
