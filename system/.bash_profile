@@ -3,6 +3,7 @@ export LSCOLORS=ExFxCxDxBxededabagadad
 
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
+alias err='tail -f ~/Sites/error_log'
 alias bugs='ssh deac@10.1.1.72 -p 4022'
 alias aws_weeklio='ssh -i ~/weekliokp.pem root@ec2-184-72-211-186.compute-1.amazonaws.com'
 alias aws_sdb='ssh -i ~/weekliokp.pem root@ec2-54-243-201-148.compute-1.amazonaws.com'
