@@ -6,11 +6,11 @@ gold=$(tput bold)$(tput setaf 3)
 scriptSrc="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 sublime_source=$scriptSrc/sublime/
-if [ -d "/Users/$(whoami)/Library/Application Support/Sublime Text 2" ]
+if [ -d "/Users/$(whoami)/Library/Application Support/Sublime Text 3" ]
 then
-	sublime_target=/Users/$(whoami)/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+	sublime_target=/Users/$(whoami)/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 else
-	sublime_target=/Users/$(whoami)/Library/Application\ Support/Sublime\ Text/Packages/User/
+	sublime_target=/Users/$(whoami)/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
 fi
 if [ -d "/Applications/Sublime Text 2.app" ]
 then
