@@ -21,6 +21,11 @@ fi
 system_source=$scriptSrc/system/
 system_target=/Users/$(whoami)/
 echo "${gold}"
+if [ ! -d "/usr/local/bin" ]
+then
+	sudo mkdir -p /usr/local/bin
+fi
+echo "${gold}"
 if [ -d "$sublime_target" ]
 then
 	echo "Moving sublime settings into appropriate locations"
