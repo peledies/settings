@@ -155,5 +155,18 @@ else
 	echo "${gold}"
 
 fi
+if which gitk >/dev/null; then
+    echo "${green}Keeping existing gitk"
+else
+    echo "${gold}"
+	echo "Copying gitk to /usr/local/bin/gitk"
+	if sudo cp "$system_source""gitk" "/usr/local/bin/gitk"
+	then
+		echo "${green}Success"
+	else
+		echo "${red}"
+	fi
+	echo "${gold}"
+fi
 echo "${red}"
 echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect"
