@@ -46,6 +46,14 @@ else
 	fi
 fi
 echo "${gold}"
+echo "overwriting $system_target.ssh/config"
+if cp "$system_source/config" "$system_target.ssh/config"
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+echo "${gold}"
 echo "overwriting $system_target.bash_profile"
 if cp "$system_source.bash_profile" "$system_target"
 then
