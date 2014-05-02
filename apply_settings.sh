@@ -178,12 +178,12 @@ else
 fi
 echo "${gold}"
 echo "Copying git_list_remotes_by_date to /usr/local/bin/"
-if cp "$system_source""git_list_remotes_by_date" "/usr/local/bin/"
+if sudo cp "$system_source""git_list_remotes_by_date" "/usr/local/bin/git_list_remotes_by_date"
 then
 	echo "${green}Success"
 else
 	echo "${red}"
 fi
-echo "${gold}"
+source ~/.bash_profile
 echo "${red}"
-echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect"
+echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect in this tty. The changes should be in effect for all new tty's"
