@@ -3,6 +3,7 @@ export LSCOLORS=ExFxCxDxBxededabagadad
 
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
+alias git-date=git_list_remotes_by_date
 alias err='tail -f ~/Sites/error_log'
 alias vi='vim'
 alias brc_pong='ssh -p 4022 deac@sdicgdev.com tail -f -n 1 /home/deac/access_logs/brc_access_log | logstalgia - -x'
@@ -19,3 +20,6 @@ EDITOR='vi'
 export EDITOR
 VISUAL='vi'
 export VISUAL
+
+# __loopback-oracle-installer__:  Tue Jan 28 16:04:10 EST 2014
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/deac/Sites/cleverGirl/sls-sample-app/node_modules/loopback-connector-oracle/node_modules/instantclient"

@@ -176,5 +176,14 @@ else
 	fi
 	echo "${gold}"
 fi
+echo "${gold}"
+echo "Copying git_list_remotes_by_date to /usr/local/bin/"
+if cp "$system_source""git_list_remotes_by_date" "/usr/local/bin/"
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+echo "${gold}"
 echo "${red}"
 echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect"
