@@ -1,1 +1,57 @@
-/Users/deac/.ssh/config
+Host bugs
+	HostName 10.1.1.72
+	Port 4022
+	User deac
+
+Host sdb
+	HostName ec2-54-243-201-148.compute-1.amazonaws.com
+	Port 22
+	User root
+	IdentityFile ~/.ssh/weekliokp.pem
+
+Host mailhub
+	HostName ec2-67-202-23-127.compute-1.amazonaws.com 
+	Port 22
+	User root
+	IdentityFile ~/.ssh/weekliokp.pem
+
+Host webzilla
+	HostName 216.246.6.171
+	Port 45667
+	User root
+	
+Host burt
+	HostName 10.1.1.111
+	Port 22
+	User root
+
+Host karnsonline-home
+	HostName karnsonline.dyndns-home.com
+	Port 22
+	User deac
+
+Host macpro
+	HostName macpro.local
+	Port 22
+	User deac
+
+Host macbook
+	HostName macbook.local
+	Port 22
+	User deac
+
+Host imac
+	HostName deac.local
+	Port 22
+	User deac
+
+Host karnsonline
+	HostName karnsonline.com
+	Port 22
+	User root 
+
+Host pinwheel
+        Hostname ec2-54-221-114-174.compute-1.amazonaws.com
+        User ec2-user
+        Port 22
+        Identityfile ~/.ssh/weekliokp.pem
