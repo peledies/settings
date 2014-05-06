@@ -50,3 +50,8 @@ Host karnsonline
 	Port 22
 	User root 
 
+Host pinwheel
+        Hostname ec2-54-221-114-174.compute-1.amazonaws.com
+        User ec2-user
+        Port 22
+        Identityfile ~/.ssh/weekliokp.pem

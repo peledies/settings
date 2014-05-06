@@ -15,9 +15,9 @@
     diff = auto
     status = auto
 [color "branch"]
-    current = yellow
+    current = magenta bold 
     local = yellow
-    remote = green
+    remote = blue
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
@@ -27,3 +27,7 @@
     added = yellow
     changed = green
     untracked = cyan
+[core]
+	excludesfile = /Users/deac/.gitignore_global
+[push]
+	default = simple

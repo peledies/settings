@@ -3,7 +3,7 @@ export LSCOLORS=ExFxCxDxBxededabagadad
 
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
-alias git-date=git_list_remotes_by_date
+alias git-stale=git_list_remotes_by_date
 alias err='tail -f ~/Sites/error_log'
 alias vi='vim'
 alias brc_pong='ssh -p 4022 deac@sdicgdev.com tail -f -n 1 /home/deac/access_logs/brc_access_log | logstalgia - -x'
