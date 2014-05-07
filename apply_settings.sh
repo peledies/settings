@@ -177,8 +177,8 @@ else
 	echo "${gold}"
 fi
 echo "${gold}"
-echo "Copying git_list_remotes_by_date to /usr/local/bin/"
-if sudo cp "$system_source""git_list_remotes_by_date" "/usr/local/bin/git_list_remotes_by_date"
+echo "Copying git-stale to /usr/local/bin/"
+if sudo cp "$system_source""git-stale" "/usr/local/bin/git-stale"
 then
 	echo "${green}Success"
 else
