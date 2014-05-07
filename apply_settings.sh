@@ -177,10 +177,27 @@ else
 	echo "${gold}"
 fi
 echo "${gold}"
+echo "${green}Fetching the latest version of git-stale"
+if curl "https://raw.githubusercontent.com/peledies/git-stale/master/git-stale" > "$system_source""git-stale"
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+echo "${gold}"
 echo "Copying git-stale to /usr/local/bin/"
+
 if sudo cp "$system_source""git-stale" "/usr/local/bin/git-stale"
 then
 	echo "${green}Success"
+else
+	echo "${red}"
+fi
+echo "${gold}"
+echo "Cleaning up temporary files."
+if rm "$system_source""git-stale"
+then
+	echo "${green}git-stale removed"
 else
 	echo "${red}"
 fi
