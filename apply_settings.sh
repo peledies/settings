@@ -78,6 +78,14 @@ else
 	echo "${red}"
 fi
 echo "${gold}"
+echo "${gold}What username do you want to use with GIT?${red}"
+read name
+git config --global user.name $name
+echo "${gold}"
+echo "What email do you want to use with GIT?${red}"
+read email
+git config --global user.email $email
+echo "${gold}"
 echo "overwriting $system_target.gitignore_global"
 if cp "$system_source.gitignore_global" "$system_target"
 then
