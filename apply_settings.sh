@@ -86,6 +86,9 @@ echo "What email do you want to use with GIT?${red}"
 read email
 git config --global user.email $email
 echo "${gold}"
+echo "Using ~/.gitignore for global"
+git config --global core.excludesfile ~/.gitignore
+echo ""
 echo "overwriting $system_target.gitignore_global"
 if cp "$system_source.gitignore_global" "$system_target"
 then
