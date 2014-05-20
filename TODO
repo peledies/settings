@@ -1,0 +1,25 @@
+TODO:
+
+install command_line_tools
+
+ask if they want to install logstalgia
+	y:	install homebrew
+		brew install logstalgia
+
+install node.js
+	curl -O http://nodejs.org/dist/v0.10.28/node-v0.10.28.pkg
+	sudo installer -pkg /Volumes/Vagrant/Vagrant.pkg  -target /
+
+install bower globally
+
+install composer globaly
+	$ curl -sS https://getcomposer.org/installer | php
+	$ sudo mv composer.phar /usr/local/bin/composer
+
+install virtual box
+	$ brew cask install virtualbox
+
+install vagrant
+	curl - O https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.2.dmg
+	sudo hdiutil attach vagrant_1.6.2.dmg 
+	sudo installer -pkg /Volumes/Vagrant/Vagrant.pkg  -target /
