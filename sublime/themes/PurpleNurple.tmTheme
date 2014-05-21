@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Domenico Carbotta</string>
+	<string>Deac Karns</string>
 	<key>name</key>
-	<string>Blackboard</string>
+	<string>Purple Nurple</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -23,6 +23,14 @@
 				<string>#006DFF42</string>
 				<key>selection</key>
 				<string>#0028FF</string>
+				<key>bracketsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketsOptions</key>
+				<string>foreground</string>
+				<key>bracketContentsForeground</key>
+				<string>#00FF00</string>
+				<key>bracketContentsOptions</key>
+				<string>foreground</string>
 			</dict>
 		</dict>
 		<dict>
