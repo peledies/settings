@@ -205,6 +205,68 @@ else
 	echo "${red}"
 fi
 echo "${gold}"
+
+read -p "Do you want to install Homebrew? It will take quite a while: [Y/y]" -n 2 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	echo "Intalling Homebrew"
+	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    
+fi
+
+echo "${gold}Installing  the latest version of logstalgia"
+if brew install logstalgia
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+
+read -p "Do you want to install node and npm? It could take quite a while: [Y/y]" -n 2 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	echo "${gold}Installing the latest version of node and npm"
+	if brew install node
+	then
+		echo "${green}Success"
+	else
+		echo "${red}"
+	fi 
+fi
+
+echo "${gold}Installing the latest version of grunt-cli with the global option -g"
+if npm install -g grunt-cli
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+
+echo "${gold}Installing the latest version of bower with the global option -g"
+if npm install -g bower
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+
+echo "${gold}"
+echo "${green}Fetching the latest version of composer for php"
+if curl -sS "https://getcomposer.org/installer" | php
+then
+	echo "${green}Success"
+	echo "${green}moving composer to /usr/local/bin"
+	if sudo mv "composer.phar" "/usr/local/bin/composer"
+	then
+		echo "${green}Success"
+	else
+		echo "${red}"
+	fi
+else
+	echo "${red}"
+fi
+
+echo "${gold}"
 echo "Cleaning up temporary files."
 if rm "$system_source""git-stale"
 then
@@ -212,6 +274,8 @@ then
 else
 	echo "${red}"
 fi
+
+
 source ~/.bash_profile
 echo "${red}"
 echo "You must run 'source ~/.bash_profile' in order for the settings to be fully in effect in this tty. The changes should be in effect for all new tty's"
