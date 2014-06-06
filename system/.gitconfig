@@ -29,3 +29,5 @@
 	excludesfile = /Users/deac/.gitignore_global
 [push]
 	default = simple
+[url "https://"]
+        insteadOf = git://
