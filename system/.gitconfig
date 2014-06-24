@@ -15,7 +15,7 @@
 [color "branch"]
     current = magenta bold 
     local = yellow
-    remote = blue
+    remote = cyan
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
