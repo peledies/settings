@@ -1,6 +1,6 @@
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxededabagadad
-
+export LSCOLORS=GxFxCxDxBxededabagadad
+# LSCOLORS generator http://geoff.greer.fm/lscolors/
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
 alias err='tail -f ~/Sites/error_log'
