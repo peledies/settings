@@ -222,6 +222,14 @@ else
 	echo "${red}"
 fi
 
+echo "${gold}Installing  the latest version of wget"
+if brew install wget
+then
+	echo "${green}Success"
+else
+	echo "${red}"
+fi
+
 read -p "Do you want to install node and npm? It could take quite a while: [Y/y]" -n 2 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
