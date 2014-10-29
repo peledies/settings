@@ -1,6 +1,6 @@
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxededabagadad
-
+export LSCOLORS=GxFxCxDxBxededabagadad
+# LSCOLORS generator http://geoff.greer.fm/lscolors/
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
 alias err='tail -f ~/Sites/error_log'
@@ -8,6 +8,9 @@ alias vi='vim'
 alias brc_pong='ssh -p 4022 deac@sdicgdev.com tail -f -n 1 /home/deac/access_logs/brc_access_log | logstalgia - -x'
 alias sportcamps_pong='ssh -p 45667 root@216.246.6.171 tail -f -n 1 /etc/httpd/logs/access_log | logstalgia - -x'
 alias sdb_pong='ssh -i ~/weekliokp.pem root@ec2-54-243-201-148.compute-1.amazonaws.com tail -f -n 1 /var/log/httpd/schooldatebooks.com-access_log | logstalgia - -x'
+alias betaTail="ssh -t pinwheel 'tail -f /var/log/httpd/beta.pinwheelapi.com-error_log' | ptail"
+alias featureTail="ssh -t pinwheel 'tail -f /var/log/httpd/feature.pinwheelapi.com-error_log' | ptail"
+alias webTail="ssh -t pinwheel 'tail -f /var/log/httpd/web.pinwheelapi.com-error_log' | ptail"
 
 #Git configuration stuff
 source /usr/share/git-core/git-completion.bash
