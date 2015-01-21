@@ -45,6 +45,21 @@ else
 		echo "${red}"
 	fi
 fi
+if [ ! -d ~/sublime_text_snippets ]
+  then
+  if git clone https://github.com/peledies/sublime_snippets.git ~/sublime_text_snippets
+    then
+      rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets
+      ln -s ~/sublime_text_snippets/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets
+      echo "${green}Success"
+    else
+      echo "${red}"
+    fi
+  else
+      echo "${gold}Sublime Snippets directory already exists, creating Symlink to sublime_text_snippets directory for sublime text"
+      rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets
+      ln -s ~/sublime_text_snippets/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets
+  fi
 echo "${gold}"
 echo "overwriting $system_target.ssh/config"
 if cp "$system_source/config" "$system_target.ssh/config"
