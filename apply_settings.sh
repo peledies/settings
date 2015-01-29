@@ -225,8 +225,7 @@ read -p "Do you want to install Homebrew? It will take quite a while: [Y/y]" -n 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	echo "Intalling Homebrew"
-	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-    
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"    
 fi
 
 echo "${gold}Installing  the latest version of logstalgia"
