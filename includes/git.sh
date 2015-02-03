@@ -82,16 +82,16 @@ if hash git 2>/dev/null;
       then
         echo "${green}  Script already exists, moving on."
       else    
-        if curl "https://raw.githubusercontent.com/peledies/git-stale/master/git-stale" > "$system_source""git-stale"
+        if curl "https://raw.githubusercontent.com/peledies/git-stale/master/git-stale" > "$system_source/git-stale"
           then
             echo "${green}  Success"
         fi
     fi
 
-    if [ -f git-stale ]
+    if [ -f "$system_source/git-stale" ]
       then
         echo "${gold}\nFixing permissions on git-stale"
-        if chmod 755 git-stale
+        if chmod 755 "$system_source/git-stale"
           then
             echo "${green}  Success"
         fi
