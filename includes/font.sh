@@ -1,0 +1,6 @@
+bold=$(tput bold)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+gold=$(tput setaf 3)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
